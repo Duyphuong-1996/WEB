@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <title>Travel</title>
+</head>
+<body>
+    <header>
+        <div class="abc">
+            <div class="header-content row">
+                <div class="header-logo">
+                    <img src="images/logonew.png" alt="">
+                </div>
+                <div class="header-nav">
+                    <ul>
+                        <li><a href="">ホームページ</a></li>    
+                        <li><a href="">特徴</a></li>
+                        <li><a href="">チャート</a></li>
+                        <li><a href="">提案</a></li>
+                        <li><a href="">サポート</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="slider owl-carousel owl-theme">
+        <div class="slider-item slider-item-one">
+            <div class="abc">
+                <div class="slider-item-text">
+                    <p style="font-weight: bold;font-size: 25px;">フォンニャケバン</p> <br>
+                    <p>この場所は、謎の新しい土地を探索したり、探索したりするのが好きな人にとって間違いなく観光地です。</p> <br>
+                    <p><a href="phongnha.html"><button>詳しく</button></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="slider-item slider-item-two">
+            <div class="abc">
+                <div class="slider-item-text">
+                    <p style="font-weight: bold;font-size: 25px;">バナヒル</p> <br>
+                    <p>ここに来ると、ここの海の涼しい青い水に身を浸すためのリラックスと快適さの瞬間があります。</p> <br>
+                    <p><a href="banahill.html"><button>詳しく</button></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="slider-item slider-item-three">
+            <div class="abc">
+                <div class="slider-item-text">
+                    <p style="font-weight: bold;font-size: 25px;">フーコック島</p> <br>
+                    <p>自然の「息」でリラックスするのに理想的な場所として、自然そのものの「純粋な生活」は、人生の疲れを癒すのに役立ちます。</p> <br>
+                    <p><button>詳しく</button></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+    </script>
+</body>
+</html>
